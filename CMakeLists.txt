@@ -9,7 +9,7 @@ project(gz-ionic VERSION 1.0.0)
 # Find gz-cmake
 #============================================================================
 # If you get an error at this line, you need to install gz-cmake
-find_package(gz-cmake3 REQUIRED)
+find_package(gz-cmake4 REQUIRED)
 
 #============================================================================
 # Configure the project
@@ -18,19 +18,19 @@ gz_configure_project(VERSION_SUFFIX)
 
 # all list of ionic packages
 
-gz_find_package(gz-common5 REQUIRED)
+gz_find_package(gz-common6 REQUIRED)
 gz_find_package(gz-fuel_tools9 REQUIRED)
 gz_find_package(gz-sim8 REQUIRED)
 gz_find_package(gz-gui8 REQUIRED)
 gz_find_package(gz-launch7 REQUIRED)
-gz_find_package(gz-math7 REQUIRED)
+gz_find_package(gz-math8 REQUIRED)
 gz_find_package(gz-msgs10 REQUIRED)
 gz_find_package(gz-physics7 REQUIRED)
-gz_find_package(gz-plugin2 REQUIRED)
+gz_find_package(gz-plugin3 REQUIRED)
 gz_find_package(gz-rendering8 REQUIRED)
 gz_find_package(gz-sensors8 REQUIRED)
 gz_find_package(gz-transport13 REQUIRED)
-gz_find_package(gz-utils2 REQUIRED)
+gz_find_package(gz-utils3 REQUIRED)
 gz_find_package(sdformat14 REQUIRED)
 
 if(build_warnings)
