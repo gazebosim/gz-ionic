@@ -54,4 +54,4 @@ if(build_errors)
 
 endif()
 
-install(DIRECTORY gazebodistro DESTINATION ${IGN_DATA_INSTALL_DIR})
+install(FILES release_notes.md  DESTINATION ${GZ_DATA_INSTALL_DIR})
