@@ -15,7 +15,7 @@ libgz-plugin3-dev
 libgz-rendering9-dev
 libgz-sensors9-dev
 libgz-sim9-dev
-libgz-tools3-dev
+libgz-tools2-dev
 libgz-transport14-dev
 libgz-utils3-cli-dev
 libgz-utils3-dev
