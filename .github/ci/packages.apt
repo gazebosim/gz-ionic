@@ -10,7 +10,7 @@ libgz-launch8-dev
 libgz-math8-dev
 libgz-math8-eigen3-dev
 libgz-msgs11-dev
-libgz-physics6-dev
+libgz-physics8-dev
 libgz-plugin3-dev
 libgz-rendering9-dev
 libgz-sensors9-dev
@@ -19,7 +19,7 @@ libgz-tools2-dev
 libgz-transport14-dev
 libgz-utils3-cli-dev
 libgz-utils3-dev
-libsdformat13-dev
+libsdformat15-dev
 python3-gz-math8
 python3-gz-sim9
-python3-sdformat13
+python3-sdformat15
