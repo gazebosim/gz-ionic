@@ -18,11 +18,27 @@
 
 ## gazebosim/gz-physics:
 
-- [Improve bullet-featherstone physics plugin
-  * [Added support for nested model](https://github.com/gazebosim/gz-physics/pull/574)
-  * [Added support for off-diagnoal inertial](https://github.com/gazebosim/gz-physics/pull/574)
-  * [Optimized static object collisions](https://github.com/gazebosim/gz-physics/pull/611)
-  * [Improve mesh collision stability](https://github.com/gazebosim/gz-physics/pull/600)
-  * [Enable auto deactivation](https://github.com/gazebosim/gz-physics/pull/630)
-  * [Added support for mesh convex decomposition](https://github.com/gazebosim/gz-physics/pull/606)
-  * [Enforced joint velocity and effort limits for velocity control commands](https://github.com/gazebosim/gz-physics/pull/658)
+- Improve bullet-featherstone physics plugin:
+  - [Add support for nested model](https://github.com/gazebosim/gz-physics/pull/574)
+  - [Add support for off-diagnoal inertial](https://github.com/gazebosim/gz-physics/pull/574)
+  - [Optimize static object collisions](https://github.com/gazebosim/gz-physics/pull/611)
+  - [Improve mesh collision stability](https://github.com/gazebosim/gz-physics/pull/600)
+  - [Enable auto deactivation](https://github.com/gazebosim/gz-physics/pull/630)
+  - [Add support for mesh convex decomposition](https://github.com/gazebosim/gz-physics/pull/606)
+  - [Enforce joint velocity and effort limits for velocity control commands](https://github.com/gazebosim/gz-physics/pull/658)
+
+
+## gazebosim/gz-common:
+
+- [Adds new function in MeshManager for performing convex decomposition](https://github.com/gazebosim/gz-common/pull/585)
+
+
+## gazebosim/gz-sim:
+
+- [Support visualizing mesh collisions with convex decomposition](https://github.com/gazebosim/gz-sim/pull/2352)
+- [Support mesh optimization when using AttachMeshShapeFeature](https://github.com/gazebosim/gz-sim/pull/2417)
+
+
+## gazebosim/sdformat:
+
+- [Add mesh optimization attribute to <mesh>](https://github.com/gazebosim/sdformat/pull/1382), [sdformat#1403](https://github.com/gazebosim/sdformat/pull/1403)
