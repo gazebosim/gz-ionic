@@ -14,3 +14,15 @@
 - [bazel:Add license checking support](https://github.com/gazebosim/gz-utils/pull/108)
 - [Add package.xml](https://github.com/gazebosim/gz-utils/pull/125)
 - [Require cmake version 3.22.1](https://github.com/gazebosim/gz-utils/pull/132)
+
+
+## gazebosim/gz-physics:
+
+- [Improve bullet-featherstone physics plugin
+  * [Added support for nested model](https://github.com/gazebosim/gz-physics/pull/574)
+  * [Added support for off-diagnoal inertial](https://github.com/gazebosim/gz-physics/pull/574)
+  * [Optimized static object collisions](https://github.com/gazebosim/gz-physics/pull/611)
+  * [Improve mesh collision stability](https://github.com/gazebosim/gz-physics/pull/600)
+  * [Enable auto deactivation](https://github.com/gazebosim/gz-physics/pull/630)
+  * [Added support for mesh convex decomposition](https://github.com/gazebosim/gz-physics/pull/606)
+  * [Enforced joint velocity and effort limits for velocity control commands](https://github.com/gazebosim/gz-physics/pull/658)
