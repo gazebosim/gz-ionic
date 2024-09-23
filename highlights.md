@@ -35,12 +35,12 @@
 
   - Added support for mesh optimization on the collision mesh. Users can now
     specify whether or not to perform mesh optimization on a
-    collision mesh in SDF (requires SDF spec version >= 1.11). Two optimization
+    collision mesh in SDFormat (requires SDFormat spec version >= 1.11). Two optimization
     methods are currently supported: `convex_decomposition` and `convex_hull`.
     Gazebo uses the open source
     [V-HACD](https://github.com/kmammou/v-hacd) library to perform
     convex decomposition to split the mesh into multiple submeshes.
-    Example SDF usage:
+    Example SDFormat usage:
 
     ```xml
     <collision>
@@ -54,7 +54,7 @@
     </collision>
     ```
 
-- [Support specifying plugins in SDF files without overriding default
+- [Support specifying plugins in SDFormat files without overriding default
   plugins](https://github.com/gazebosim/gz-sim/pull/2497) and [gz-gui#631](https://github.com/gazebosim/gz-gui/pull/631)
 
   - In prior Gazebo versions, if a user specified a server plugin at the
@@ -79,7 +79,7 @@
 
     ```
 
-    whereas previously, the SDF file has all the default plugins:
+    whereas previously, the SDFormat file has all the default plugins:
 
     ```xml
     <world name="contact_sensor">
@@ -132,7 +132,7 @@ See [gz-transport#477](https://github.com/gazebosim/gz-transport/pull/477), [gz-
 
 - Add new primitive geometry for cones.
 
-  - Create a parametric cone primitive from the gui or in sdf. Useful for sensor visualization, nosecones, and much more. See [gz-gui#621](https://github.com/gazebosim/gz-gui/pull/621), [gz-math#594](https://github.com/gazebosim/gz-math/pull/594), [gz-msgs#442](https://github.com/gazebosim/gz-msgs/pull/442), [gz-physics#639](https://github.com/gazebosim/gz-physics/pull/639), [gz-rendering#1003](https://github.com/gazebosim/gz-rendering/pull/1003), [gz-sim#2410](https://github.com/gazebosim/gz-sim/pull/2410), and [sdformat#1418](https://github.com/gazebosim/sdformat/pull/1418).
+  - Create a parametric cone primitive from the gui or in SDFormat. Useful for sensor visualization, nosecones, and much more. See [gz-gui#621](https://github.com/gazebosim/gz-gui/pull/621), [gz-math#594](https://github.com/gazebosim/gz-math/pull/594), [gz-msgs#442](https://github.com/gazebosim/gz-msgs/pull/442), [gz-physics#639](https://github.com/gazebosim/gz-physics/pull/639), [gz-rendering#1003](https://github.com/gazebosim/gz-rendering/pull/1003), [gz-sim#2410](https://github.com/gazebosim/gz-sim/pull/2410), and [sdformat#1418](https://github.com/gazebosim/sdformat/pull/1418).
 
 
 - Gazebo/ROS Vendor Packages
