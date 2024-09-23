@@ -35,12 +35,12 @@
 
   - Added support for mesh optimization on the collision mesh. Users can now
     specify whether or not to perform mesh optimization on a
-    collision mesh in SDF (requires SDF spec version >= 1.11). Two optimization
+    collision mesh in SDFormat (requires SDFormat spec version >= 1.11). Two optimization
     methods are currently supported: `convex_decomposition` and `convex_hull`.
     Gazebo uses the open source
     [V-HACD](https://github.com/kmammou/v-hacd) library to perform
     convex decomposition to split the mesh into multiple submeshes.
-    Example SDF usage:
+    Example SDFormat usage:
 
     ```xml
     <collision>
@@ -54,7 +54,7 @@
     </collision>
     ```
 
-- [Support specifying plugins in SDF files without overriding default
+- [Support specifying plugins in SDFormat files without overriding default
   plugins](https://github.com/gazebosim/gz-sim/pull/2497) and [gz-gui#631](https://github.com/gazebosim/gz-gui/pull/631)
 
   - In prior Gazebo versions, if a user specified a server plugin at the
@@ -79,7 +79,7 @@
 
     ```
 
-    whereas previously, the SDF file has all the default plugins:
+    whereas previously, the SDFormat file has all the default plugins:
 
     ```xml
     <world name="contact_sensor">
@@ -104,6 +104,46 @@
     </world>
 
     ```
+
+- Specify execution order for System `PreUpdate` and `Update` callbacks
+  ([gz-sim#2487](https://github.com/gazebosim/gz-sim/pull/2487),
+  [gz-sim#2500](https://github.com/gazebosim/gz-sim/pull/2500)).
+
+  - While the `PreUpdate`, `Update`, and `PostUpdate` phases of gz-sim systems
+    allow some control over the order in which code is executed, there are
+    cases in which more control is desired. For example, the `UserCommands`
+    system can create new models during its `PreUpdate` callback in response
+    to `EntityFactory` messages (see the
+    [entity creation tutorial](https://gazebosim.org/api/sim/9/entity_creation.html)),
+    and that callback should happen before any other system callbacks that
+    expect to operate on all entities in the scene. Now, the order of execution
+    for `PreUpdate` and `Update` callbacks for a System can be specified using
+    an integer priority value, with smaller values executing first.
+    The default system priority can be specified at compilation time by
+    implementing a new `SystemConfigurePriority` interface in that system,
+    and the priority can be overridden by specifying an XML parameter in the
+    system's SDFormat `<plugin/>` tag.
+  - Constant priority values have been defined in
+    [gz/sim/System.hh](https://github.com/gazebosim/gz-sim/blob/gz-sim9_9.0.0-pre1/include/gz/sim/System.hh#L106-L129)
+    for the `Physics` and `UserCommands` systems to ensure that
+    `UserCommands::PreUpdate` and `Physics::Update` execute before other
+    system callbacks with default priority.
+
+- Improve determinism of ForceTorque sensor
+  ([gz-sensors#449](https://github.com/gazebosim/gz-sensors/pull/449),
+  [gz-sim#2487](https://github.com/gazebosim/gz-sim/pull/2487),
+  [gz-sim#2494](https://github.com/gazebosim/gz-sim/pull/2494),
+  [gz-sim#2500](https://github.com/gazebosim/gz-sim/pull/2500)).
+
+  - The wrenches measured by ForceTorque sensors are now written to the ECM
+    in addition to publishing to a gz-transport topic, offering a more
+    deterministic data path for sensor data.
+  - Writing sensor data to the ECM required moving the sensor update from the
+    `PostUpdate` callback, which allows read-only access to the ECM with
+    parallel execution, to the `Update` callback, which allows write-access to
+    the ECM with sequential execution. It also uses the system execution order
+    priority to ensure that the ForceTorque `Update` callback occurs after
+    the `Physics` system `Update`.
 
 - Gazebo Transport improvements.
 See [gz-transport#477](https://github.com/gazebosim/gz-transport/pull/477), [gz-transport#486](https://github.com/gazebosim/gz-transport/pull/486), [gz-transport#487](https://github.com/gazebosim/gz-transport/pull/487), [gz-transport#503](https://github.com/gazebosim/gz-transport/pull/503), and [gz-transport#506](https://github.com/gazebosim/gz-transport/pull/506).
@@ -132,7 +172,7 @@ See [gz-transport#477](https://github.com/gazebosim/gz-transport/pull/477), [gz-
 
 - Add new primitive geometry for cones.
 
-  - Create a parametric cone primitive from the gui or in sdf. Useful for sensor visualization, nosecones, and much more. See [gz-gui#621](https://github.com/gazebosim/gz-gui/pull/621), [gz-math#594](https://github.com/gazebosim/gz-math/pull/594), [gz-msgs#442](https://github.com/gazebosim/gz-msgs/pull/442), [gz-physics#639](https://github.com/gazebosim/gz-physics/pull/639), [gz-rendering#1003](https://github.com/gazebosim/gz-rendering/pull/1003), [gz-sim#2410](https://github.com/gazebosim/gz-sim/pull/2410), and [sdformat#1418](https://github.com/gazebosim/sdformat/pull/1418).
+  - Create a parametric cone primitive from the gui or in SDFormat. Useful for sensor visualization, nosecones, and much more. See [gz-gui#621](https://github.com/gazebosim/gz-gui/pull/621), [gz-math#594](https://github.com/gazebosim/gz-math/pull/594), [gz-msgs#442](https://github.com/gazebosim/gz-msgs/pull/442), [gz-physics#639](https://github.com/gazebosim/gz-physics/pull/639), [gz-rendering#1003](https://github.com/gazebosim/gz-rendering/pull/1003), [gz-sim#2410](https://github.com/gazebosim/gz-sim/pull/2410), and [sdformat#1418](https://github.com/gazebosim/sdformat/pull/1418).
 
 
 - Gazebo/ROS Vendor Packages
