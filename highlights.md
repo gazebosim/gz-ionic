@@ -105,6 +105,36 @@
 
     ```
 
+- Gazebo Transport improvements.
+See [gz-transport#477](https://github.com/gazebosim/gz-transport/pull/477), [gz-transport#486](https://github.com/gazebosim/gz-transport/pull/486), [gz-transport#487](https://github.com/gazebosim/gz-transport/pull/487), [gz-transport#503](https://github.com/gazebosim/gz-transport/pull/503), and [gz-transport#506](https://github.com/gazebosim/gz-transport/pull/506).
+
+  - An extra option has been added to the `SubscriberOptions` class allowing the ability to ignore messages when publisher
+  and subscriber share the same node. This feature was particularly interesting to avoid loops in the `ros_gz` bridge.
+  See more context [here](https://github.com/gazebosim/ros_gz/issues/555).
+
+  - Most of the gz-transport functionality can be exercised via command line with the `gz topic` or `gz service` subcommands.
+  We've reduced the amount of typing needed to request certain services from CLI. Here's a summary:
+    - Gazebo Ionic allows to request one-way service requests directly from the command line. In prior Gazebo versions, users
+    had to specify `--reptype gz.msgs.Empty ` to simulate one-way service requests.
+    - The synchronous service requests have now a default timeout, reducing the amount of typing from the CLI.
+    - Gazebo Ionic allows to request no-input service requests directly from the command line. In prior Gazebo versions, users had to specify `--reqtype gz.msgs.Empty ` to simulate no-input service requests.
+    - Closer `gz topic` behaviour to ROS CLI by adding topic frequency `gz topic -f <topic_name>`.
+
+- Gazebo camera tracking.
+
+Control tracking, following and see current tracking status from the gui as well as through gz topics. See [gz-gui#619](https://github.com/gazebosim/gz-gui/pull/619), [gz-msgs#440](https://github.com/gazebosim/gz-msgs/pull/440), and [gz-sim#2402](https://github.com/gazebosim/gz-sim/pull/2402).
+
+
+- Change materials dynamically.
+
+Can now make opaque objects translucent, simulate LEDs or other lighting by setting emissivity when source turned on or off from a `gz-transport` message or over `ros-gz` bridge. See [gz-msgs#414](https://github.com/gazebosim/gz-msgs/pull/414), [gz-msgs#415](https://github.com/gazebosim/gz-msgs/pull/415), [gz-msgs#416](https://github.com/gazebosim/gz-msgs/pull/416), [ros_gz#486](https://github.com/gazebosim/ros_gz/pull/486), and [gz-sim#2286](https://github.com/gazebosim/gz-sim/pull/2286).
+
+
+- Add new primitive geometry for cones.
+
+Create a parametric cone primitive from the gui or in sdf. Useful for sensor visualization, nosecones, and much more. See [gz-gui#621](https://github.com/gazebosim/gz-gui/pull/621), [gz-math#594](https://github.com/gazebosim/gz-math/pull/594), [gz-msgs#442](https://github.com/gazebosim/gz-msgs/pull/442), [gz-physics#639](https://github.com/gazebosim/gz-physics/pull/639), [gz-rendering#1003](https://github.com/gazebosim/gz-rendering/pull/1003), [gz-sim#2410](https://github.com/gazebosim/gz-sim/pull/2410), and [sdformat#1418](https://github.com/gazebosim/sdformat/pull/1418).
+
+
 - Gazebo/ROS Vendor Packages
 
 Gazebo libraries and simulator are now available directly from
@@ -138,11 +168,6 @@ composable nodes within the same process. This improves performance by
 avoiding message serialization and network transport between Gazebo and
 ROS.
 
-
-- Gazebo Transport Improvements:
-
-  - The command line tool used for making service requests has been
-    improved such that many of the arguments are no longer needed.
 
 - [New setup-gazebo GitHub Action](https://github.com/marketplace/actions/setup-gazebo-environment)
 
