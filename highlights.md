@@ -64,7 +64,7 @@
     lead to unexpected simulation behavior, causing confusion,
     particularly for new Gazebo users.
 
-  - Gazebo Ionic addresses this issue by loading default plugins even when
+    Gazebo Ionic addresses this issue by loading default plugins even when
     users specify additional plugins. Gazebo Ionic also introduces
     `<gz:policy>` settings to revert this behavior to how it functioned in
     previous Gazebo versions, if desired.  For example, the
@@ -122,70 +122,71 @@ See [gz-transport#477](https://github.com/gazebosim/gz-transport/pull/477), [gz-
 
 - Gazebo camera tracking.
 
-Control tracking, following and see current tracking status from the gui as well as through gz topics. See [gz-gui#619](https://github.com/gazebosim/gz-gui/pull/619), [gz-msgs#440](https://github.com/gazebosim/gz-msgs/pull/440), and [gz-sim#2402](https://github.com/gazebosim/gz-sim/pull/2402).
+  - Control tracking, following and see current tracking status from the gui as well as through gz topics. See [gz-gui#619](https://github.com/gazebosim/gz-gui/pull/619), [gz-msgs#440](https://github.com/gazebosim/gz-msgs/pull/440), and [gz-sim#2402](https://github.com/gazebosim/gz-sim/pull/2402).
 
 
 - Change materials dynamically.
 
-Can now make opaque objects translucent, simulate LEDs or other lighting by setting emissivity when source turned on or off from a `gz-transport` message or over `ros-gz` bridge. See [gz-msgs#414](https://github.com/gazebosim/gz-msgs/pull/414), [gz-msgs#415](https://github.com/gazebosim/gz-msgs/pull/415), [gz-msgs#416](https://github.com/gazebosim/gz-msgs/pull/416), [ros_gz#486](https://github.com/gazebosim/ros_gz/pull/486), and [gz-sim#2286](https://github.com/gazebosim/gz-sim/pull/2286).
+  - Can now make opaque objects translucent, simulate LEDs or other lighting by setting emissivity when source turned on or off from a `gz-transport` message or over `ros-gz` bridge. See [gz-msgs#414](https://github.com/gazebosim/gz-msgs/pull/414), [gz-msgs#415](https://github.com/gazebosim/gz-msgs/pull/415), [gz-msgs#416](https://github.com/gazebosim/gz-msgs/pull/416), [ros_gz#486](https://github.com/gazebosim/ros_gz/pull/486), and [gz-sim#2286](https://github.com/gazebosim/gz-sim/pull/2286).
 
 
 - Add new primitive geometry for cones.
 
-Create a parametric cone primitive from the gui or in sdf. Useful for sensor visualization, nosecones, and much more. See [gz-gui#621](https://github.com/gazebosim/gz-gui/pull/621), [gz-math#594](https://github.com/gazebosim/gz-math/pull/594), [gz-msgs#442](https://github.com/gazebosim/gz-msgs/pull/442), [gz-physics#639](https://github.com/gazebosim/gz-physics/pull/639), [gz-rendering#1003](https://github.com/gazebosim/gz-rendering/pull/1003), [gz-sim#2410](https://github.com/gazebosim/gz-sim/pull/2410), and [sdformat#1418](https://github.com/gazebosim/sdformat/pull/1418).
+  - Create a parametric cone primitive from the gui or in sdf. Useful for sensor visualization, nosecones, and much more. See [gz-gui#621](https://github.com/gazebosim/gz-gui/pull/621), [gz-math#594](https://github.com/gazebosim/gz-math/pull/594), [gz-msgs#442](https://github.com/gazebosim/gz-msgs/pull/442), [gz-physics#639](https://github.com/gazebosim/gz-physics/pull/639), [gz-rendering#1003](https://github.com/gazebosim/gz-rendering/pull/1003), [gz-sim#2410](https://github.com/gazebosim/gz-sim/pull/2410), and [sdformat#1418](https://github.com/gazebosim/sdformat/pull/1418).
 
 
 - Gazebo/ROS Vendor Packages
 
-Gazebo libraries and simulator are now available directly from
-packages.ros.org via vendor packages. The packages are built in the ROS
-buildfarm and as part of their build process, fetch the sources of the
-underlying Gazebo library and build it. In addition, the vendor packages
-provide CMake shims that make it possible to use CMake targets without
-version numbers. See the documentation for full details.
+  - Gazebo libraries and simulator are now available directly from
+    packages.ros.org via vendor packages. The packages are built in the
+    ROS buildfarm and as part of their build process, fetch the sources of
+    the underlying Gazebo library and build it. In addition, the vendor
+    packages provide CMake shims that make it possible to use CMake
+    targets without version numbers. See the documentation for full
+    details.
 
 - Improved ros_gz Launch Files
 
-ROS launch files used to start Gazebo, spawn models in simulation, and
-start the ros_gz bridge are now much simpler and more idiomatic. New XML
-and YAML elements are available to simplify the creation of launch files.
-As an example, here's how you can start gzserver and the bridge from an
-XML file:
+  - ROS launch files used to start Gazebo, spawn models in simulation, and
+    start the ros_gz bridge are now much simpler and more idiomatic. New
+    XML and YAML elements are available to simplify the creation of launch
+    files. As an example, here's how you can start gzserver and the bridge
+    from an XML file:
 
-```xml
-<launch>
-  <gz_server world_sdf_file="$(find-pkg-share my_package)/worlds/my_world.sdf" />
-  <ros_gz_bridge config_file="$(find-pkg-share my_package)/config/bridge_config.yaml" />
-</launch>
-```
+  ```xml
+  <launch>
+    <gz_server world_sdf_file="$(find-pkg-share my_package)/worlds/my_world.sdf" />
+    <ros_gz_bridge config_file="$(find-pkg-share my_package)/config/bridge_config.yaml" />
+  </launch>
+  ```
 
 - Improved ros_gz_bridge performance
 
-A new parameter use_composition is also available all the new  launch
-files to leverage the ability to launch composable nodes. This feature
-allows us to run Gazebo, the ros_gz_bridge, and other potential ROS
-composable nodes within the same process. This improves performance by
-avoiding message serialization and network transport between Gazebo and
-ROS.
+  - A new parameter use_composition is also available all the new  launch
+    files to leverage the ability to launch composable nodes. This feature
+    allows us to run Gazebo, the ros_gz_bridge, and other potential ROS
+    composable nodes within the same process. This improves performance by
+    avoiding message serialization and network transport between Gazebo
+    and ROS.
 
 
 - [New setup-gazebo GitHub Action](https://github.com/marketplace/actions/setup-gazebo-environment)
 
-A new GitHub Action to install the different versions of Gazebo is
-available through the GitHub marketplace named `setup-gazebo`. It
-supports Linux, Mac and Windows as target platforms and the use of
-different repositories for Gazebo packages: stable, prerelease or
-nightly. The Linux installation can also be combined with ROS 2 to
-install the `ros_gz_bridge` packages.
+  - A new GitHub Action to install the different versions of Gazebo is
+    available through the GitHub marketplace named `setup-gazebo`. It
+    supports Linux, Mac and Windows as target platforms and the use of
+    different repositories for Gazebo packages: stable, prerelease or
+    nightly. The Linux installation can also be combined with ROS 2 to
+    install the `ros_gz_bridge` packages.
 
-```yaml
-  - name: 'Install Gazebo Ionic from nightlies'
-    uses: gazebo-tooling/setup-gazebo@v0.2.0
-    with:
-      required-gazebo-distributions: 'ionic'
-      use-gazebo-prerelease: 'true'
-      use-gazebo-nightly: 'true'
-```
+  ```yaml
+    - name: 'Install Gazebo Ionic from nightlies'
+      uses: gazebo-tooling/setup-gazebo@v0.2.0
+      with:
+        required-gazebo-distributions: 'ionic'
+        use-gazebo-prerelease: 'true'
+        use-gazebo-nightly: 'true'
+  ```
 
 ## Bug Fixes
 
