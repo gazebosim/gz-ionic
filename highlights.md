@@ -105,6 +105,45 @@
 
     ```
 
+- Gazebo/ROS Vendor Packages
+
+Gazebo libraries and simulator are now available directly from
+packages.ros.org via vendor packages. The packages are built in the ROS
+buildfarm and as part of their build process, fetch the sources of the
+underlying Gazebo library and build it. In addition, the vendor packages
+provide CMake shims that make it possible to use CMake targets without
+version numbers. See the documentation for full details.
+
+- Improved ros_gz Launch Files
+
+ROS launch files used to start Gazebo, spawn models in simulation, and
+start the ros_gz bridge are now much simpler and more idiomatic. New XML
+and YAML elements are available to simplify the creation of launch files.
+As an example, here's how you can start gzserver and the bridge from an
+XML file:
+
+```xml
+<launch>
+  <gz_server world_sdf_file="$(find-pkg-share my_package)/worlds/my_world.sdf" />
+  <ros_gz_bridge config_file="$(find-pkg-share my_package)/config/bridge_config.yaml" />
+</launch>
+```
+
+- Improved ros_gz_bridge performance
+
+A new parameter use_composition is also available all the new  launch
+files to leverage the ability to launch composable nodes. This feature
+allows us to run Gazebo, the ros_gz_bridge, and other potential ROS
+composable nodes within the same process. This improves performance by
+avoiding message serialization and network transport between Gazebo and
+ROS.
+
+
+- Gazebo Transport Improvements:
+
+  - The command line tool used for making service requests has been
+    improved such that many of the arguments are no longer needed.
+
 ## Bug Fixes
 
 ## Breaking Changes
