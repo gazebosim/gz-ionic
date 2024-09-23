@@ -1,5 +1,6 @@
 # Gazebo Ionic Release Notes
 
+
 ## gazebosim/gz-utils:
 
 - [Add Logging utility class based on `spdlog`](https://github.com/gazebosim/gz-utils/pull/134).
@@ -46,3 +47,11 @@
 ## gazebosim/sdformat:
 
 - [Add mesh optimization attribute to `<mesh>`](https://github.com/gazebosim/sdformat/pull/1382), [sdformat#1403](https://github.com/gazebosim/sdformat/pull/1403)
+
+
+## gazebosim/gz-cmake:
+
+- [Use visibility hidden by default](https://github.com/gazebosim/gz-cmake/pull/392)
+- [Require cmake version 3.22.1](https://github.com/gazebosim/gz-cmake/pull/396)
+- [Deprecate BUILD_DOCS: generate always the doc target but exclude from default make](https://github.com/gazebosim/gz-cmake/pull/434)
+- [Deprecate GzPython.cmake in favor of find_package(Python3)](https://github.com/gazebosim/gz-cmake/pull/431)
