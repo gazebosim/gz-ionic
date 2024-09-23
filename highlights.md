@@ -105,8 +105,7 @@
 
     ```
 
-<<<<<<< HEAD
-- Improvements to gz-transport CLI ergonomics and extra option to ignore local messages.
+- Gazebo Transport improvements.
 See [gz-transport#477](https://github.com/gazebosim/gz-transport/pull/477), [gz-transport#486](https://github.com/gazebosim/gz-transport/pull/486), [gz-transport#487](https://github.com/gazebosim/gz-transport/pull/487) and [gz-transport#506](https://github.com/gazebosim/gz-transport/pull/506/).
 
   - An extra option has been added to the `SubscriberOptions` class allowing the ability to ignore messages when publisher
@@ -122,7 +121,6 @@ See [gz-transport#477](https://github.com/gazebosim/gz-transport/pull/477), [gz-
     had to specify `--reqtype gz.msgs.Empty ` to simulate no-input service requests.
 
 
-=======
 - Gazebo/ROS Vendor Packages
 
 Gazebo libraries and simulator are now available directly from
@@ -157,12 +155,6 @@ avoiding message serialization and network transport between Gazebo and
 ROS.
 
 
-- Gazebo Transport Improvements:
-
-  - The command line tool used for making service requests has been
-    improved such that many of the arguments are no longer needed.
-
->>>>>>> d25478428f4db76bd92ebfc7f99e2ead09161c15
 ## Bug Fixes
 
 ## Breaking Changes
