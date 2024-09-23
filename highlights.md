@@ -169,6 +169,24 @@ avoiding message serialization and network transport between Gazebo and
 ROS.
 
 
+- [New setup-gazebo GitHub Action](https://github.com/marketplace/actions/setup-gazebo-environment)
+
+A new GitHub Action to install the different versions of Gazebo is
+available through the GitHub marketplace named `setup-gazebo`. It
+supports Linux, Mac and Windows as target platforms and the use of
+different repositories for Gazebo packages: stable, prerelease or
+nightly. The Linux installation can also be combined with ROS 2 to
+install the `ros_gz_bridge` packages.
+
+```yaml
+  - name: 'Install Gazebo Ionic from nightlies'
+    uses: gazebo-tooling/setup-gazebo@v0.2.0
+    with:
+      required-gazebo-distributions: 'ionic'
+      use-gazebo-prerelease: 'true'
+      use-gazebo-nightly: 'true'
+```
+
 ## Bug Fixes
 
 ## Breaking Changes
