@@ -60,3 +60,20 @@
 ## Breaking Changes
 
 ## Documentation
+
+- [Improved Gazebo Documentation Website](https://github.com/gazebosim/docs/pull/441)
+  - The main documentation [website](https://gazebosim.org/docs) has been
+    migrated to a statically generated site built with
+    [Sphinx](https://sphinx-doc.org/). This adds a number of features and solves
+    a number of problems with the previous website, namely:
+    - Documentation authors can easily preview their changes by downloading the
+      generated website instead of having to set up a local development
+      environment
+    - The website is updated automatically instead of being manually triggered
+      after each PR.
+    - Search functionality is now available
+    - Improved layout and UX on mobile devices
+    - Dark and light modes
+    - Improved SEO as the content is now more easily accessible to search
+      engines.
+    - Use of Sphinx as a common documentation tool for both Gazebo and ROS.
