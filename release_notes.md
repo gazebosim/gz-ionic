@@ -32,11 +32,15 @@
 
 - [Adds new function in MeshManager for performing convex decomposition](https://github.com/gazebosim/gz-common/pull/585)
 
+## gazebosim/gz-gui:
+
+- [Add a flexible mechanism to combine user and default plugins](https://github.com/gazebosim/gz-gui/pull/631)
 
 ## gazebosim/gz-sim:
 
 - [Support visualizing mesh collisions with convex decomposition](https://github.com/gazebosim/gz-sim/pull/2352)
 - [Support mesh optimization when using AttachMeshShapeFeature](https://github.com/gazebosim/gz-sim/pull/2417)
+- [Add a flexible mechanism to combine user and default plugins](https://github.com/gazebosim/gz-sim/pull/2497)
 
 
 ## gazebosim/sdformat:

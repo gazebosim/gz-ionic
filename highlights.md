@@ -42,7 +42,6 @@
     convex decomposition to split the mesh into multiple submeshes.
     Example SDF usage:
 
-
     ```xml
     <collision>
       <mesh optimization="convex_decomposition">
@@ -53,6 +52,57 @@
         <uri>/path/to/mesh.dae</uri>
       </mesh>
     </collision>
+    ```
+
+- [Support specifying plugins in SDF files without overriding default
+  plugins](https://github.com/gazebosim/gz-sim/pull/2497) and [gz-gui#631](https://github.com/gazebosim/gz-gui/pull/631)
+
+  - In prior Gazebo versions, if a user specified a server plugin at the
+    world level, it would override all default plugins. This required
+    users to have in-depth knowledge and specify every plugin necessary
+    for a simulation to run correctly. Omitting critical plugins would
+    lead to unexpected simulation behavior, causing confusion,
+    particularly for new Gazebo users.
+
+  - Gazebo Ionic addresses this issue by loading default plugins even when
+    users specify additional plugins. Gazebo Ionic also introduces
+    `<gz:policy>` settings to revert this behavior to how it functioned in
+    previous Gazebo versions, if desired.  For example, the
+    `contact_sensor.sdf` example can now include just the additional Contact
+    system:
+
+    ```xml
+    <world name="contact_sensor">
+      <plugin filename="gz-sim-contact-system" name="gz::sim::systems::Contact"/>
+      ...
+    </world>
+
+    ```
+
+    whereas previously, the SDF file has all the default plugins:
+
+    ```xml
+    <world name="contact_sensor">
+      <plugin
+        filename="gz-sim-physics-system"
+        name="gz::sim::systems::Physics">
+      </plugin>
+      <plugin
+        filename="gz-sim-contact-system"
+        name="gz::sim::systems::Contact">
+      </plugin>
+      <plugin
+        filename="gz-sim-user-commands-system"
+        name="gz::sim::systems::UserCommands">
+      </plugin>
+      <plugin
+        filename="gz-sim-scene-broadcaster-system"
+        name="gz::sim::systems::SceneBroadcaster">
+      </plugin>
+
+      ...
+    </world>
+
     ```
 
 ## Bug Fixes
