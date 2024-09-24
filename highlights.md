@@ -230,8 +230,9 @@ See [gz-transport#477](https://github.com/gazebosim/gz-transport/pull/477), [gz-
 
 - [Removing a parent entity stops execution of the child plugins](https://github.com/gazebosim/gz-sim/pull/2232)
 
-  - This solves alot of issues whereplugin developers may have had to
-  check if the parent entity was still around on every update.
+  - This solves a lot of issues where plugin developers may have had to
+  check if the parent entity was still around on every update. Now when
+  an entity is removed all its child plugins are stopped as well.
 
 - [Spacecraft Thruster](https://github.com/gazebosim/gz-sim/pull/2431)
   - New spacecraft thruster system for simulating satellites was added.
