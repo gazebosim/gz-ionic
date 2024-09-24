@@ -228,9 +228,23 @@ See [gz-transport#477](https://github.com/gazebosim/gz-transport/pull/477), [gz-
         use-gazebo-nightly: 'true'
   ```
 
+- [Removing a parent entity stops execution of the child plugins](https://github.com/gazebosim/gz-sim/pull/2232)
+
+  - This solves alot of issues whereplugin developers may have had to
+  check if the parent entity was still around on every update.
+
+- [Spacecraft Thruster](https://github.com/gazebosim/gz-sim/pull/2431)
+  - New spacecraft thruster system for simulating satellites was added.
+
 ## Bug Fixes
 
 ## Breaking Changes
+
+- [Added mass coefficients for hydrodynamics are now deprecated](https://github.com/gazebosim/gz-sim/pull/2493)
+Use the sdformat level `fluid_added_mass` tag instead. Tutorial and migration guide is available here: https://github.com/gazebosim/gz-sim/pull/2608
+
+- [Spherical Coordinate API Cleaned Up](https://github.com/gazebosim/gz-math/pull/616)
+We are deprecating `LOCAL`. SphericalCoordinate LOCAL now behaves the same as `LOCAL2`. Also introduce new Coordinate3 APIs.
 
 ## Documentation
 
