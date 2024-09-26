@@ -67,6 +67,16 @@
 
 - [Add optional binary relocatability](https://github.com/gazebosim/gz-launch/pull/218)
 - [Add package.xml](https://github.com/gazebosim/gz-launch/pull/249)
+
+## gazebosim/gz-math:
+
+- [Added MecanumDriveOdometry Python wrapper](https://github.com/gazebosim/gz-math/pull/549)
+- [Expose non-const reference to edges in Graph.hh](https://github.com/gazebosim/gz-math/pull/580)
+- [Add package.xml](https://github.com/gazebosim/gz-math/pull/581)
+- [Add Cone as a primitive parametric shape.](https://github.com/gazebosim/gz-math/pull/593)
+- [Add CoordinateVector3 and use it in SphericalCoordinates](https://github.com/gazebosim/gz-math/pull/616)
+- [buffer_protocol for vectors and matrices in python bindings](https://github.com/gazebosim/gz-math/pull/524)
+
 ## gazebosim/gz-sim:
 
 - [Support visualizing mesh collisions with convex decomposition](https://github.com/gazebosim/gz-sim/pull/2352)
