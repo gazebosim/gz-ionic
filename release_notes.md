@@ -77,6 +77,17 @@
 - [Add CoordinateVector3 and use it in SphericalCoordinates](https://github.com/gazebosim/gz-math/pull/616)
 - [buffer_protocol for vectors and matrices in python bindings](https://github.com/gazebosim/gz-math/pull/524)
 
+## gazebosim/gz-msgs:
+
+- [Added motion duration to gui_camera.proto](https://github.com/gazebosim/gz-msgs/pull/408)
+- [Update material_color to use Entity.](https://github.com/gazebosim/gz-msgs/pull/415)
+- [Add proto message for MaterialColor.](https://github.com/gazebosim/gz-msgs/pull/414)
+- [Support standalone executable in gz-msgs11](https://github.com/gazebosim/gz-msgs/pull/357)
+- [Allow topic and service to construct messages from description files](https://github.com/gazebosim/gz-msgs/pull/428)
+- [Add package.xml](https://github.com/gazebosim/gz-msgs/pull/432)
+- [CameraTrack message for advanced tracking and following.](https://github.com/gazebosim/gz-msgs/pull/440)
+- [Add Cone as a primitive parametric shape.](https://github.com/gazebosim/gz-msgs/pull/441)
+
 ## gazebosim/gz-sim:
 
 - [Support visualizing mesh collisions with convex decomposition](https://github.com/gazebosim/gz-sim/pull/2352)
