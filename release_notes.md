@@ -101,6 +101,26 @@
 
 - [Add package.xml](https://github.com/gazebosim/gz-plugin/pull/139)
 
+## gazebosim/gz-rendering:
+
+- [Add projection matrix set/get functions to Ogre Depth camera](https://github.com/gazebosim/gz-rendering/pull/928)
+- [Extend ogre 1.x custom shaders support](https://github.com/gazebosim/gz-rendering/pull/908)
+- [Support skybox in wide angle cam view](https://github.com/gazebosim/gz-rendering/pull/901)
+- [Add LookAt function to GizmoVisual class](https://github.com/gazebosim/gz-rendering/pull/882)
+- Performance Improvements:
+  - [Improve Ogre2GpuRays performance](https://github.com/gazebosim/gz-rendering/pull/955)
+  - [Skip particle passes in Ogre2GpuRays if there are no particles in the scene](https://github.com/gazebosim/gz-rendering/pull/973)
+  - [Skip particle passes in Ogre2DepthCamera if there are no particles in the scene](https://github.com/gazebosim/gz-rendering/pull/971)
+  - [Use single cubemap camera in lidar](https://github.com/gazebosim/gz-rendering/pull/1013)
+  - [Optimization: remove extra copy of data buffer in Ogre2GpuRays and Ogre2DepthCamera](https://github.com/gazebosim/gz-rendering/pull/1022)
+- [Ogre2RenderEngine: on Windows if useCurrentGLContext is specified, set the externalWindowHandle ogre-next option](https://github.com/gazebosim/gz-rendering/pull/992)
+- [Add package.xml](https://github.com/gazebosim/gz-rendering/pull/981)
+- [ogre2: Set custom projection matrix for other types of cameras](https://github.com/gazebosim/gz-rendering/pull/1002)
+- [Add Cone as a primitive parametric shape.](https://github.com/gazebosim/gz-rendering/pull/1001)
+- [Add gamma correction to simple_demo_qml example](https://github.com/gazebosim/gz-rendering/pull/1019)
+- [Install Roboto fonts to ogre plugin](https://github.com/gazebosim/gz-rendering/pull/1035)
+- [Expose shadow texture size for directional lighting in SDF](https://github.com/gazebosim/gz-rendering/pull/1034)
+
 ## gazebosim/gz-sim:
 
 - [Support visualizing mesh collisions with convex decomposition](https://github.com/gazebosim/gz-sim/pull/2352)
