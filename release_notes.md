@@ -1,5 +1,14 @@
 # Gazebo Ionic Release Notes
 
+## gazebosim/docs:
+
+- [Add tutorial on how to a migrate ROS 2 package that uses Gazebo Classic](https://github.com/gazebosim/docs/pull/425)
+- [Add additional docs on sensors and ROS 2 usage](https://github.com/gazebosim/docs/pull/433)
+- [Add documentation for Gazebo vendor packages](https://github.com/gazebosim/docs/pull/443)
+- [Installing Gazebo11 side by side with new Gazebo Tutorial](https://github.com/gazebosim/docs/pull/438)
+- [Extend ROS integration documentation](https://github.com/gazebosim/docs/pull/448)
+- [Build documentation using Sphinx](https://github.com/gazebosim/docs/pull/441)
+- [Add instructions to run ros_buildfarm jobs](https://github.com/gazebosim/docs/pull/477)
 
 ## gazebosim/gz-utils:
 
@@ -16,7 +25,6 @@
 - [Add package.xml](https://github.com/gazebosim/gz-utils/pull/125)
 - [Require cmake version 3.22.1](https://github.com/gazebosim/gz-utils/pull/132)
 
-
 ## gazebosim/gz-physics:
 
 - Improve bullet-featherstone physics plugin:
@@ -27,7 +35,6 @@
   - [Enable auto deactivation](https://github.com/gazebosim/gz-physics/pull/630)
   - [Add support for mesh convex decomposition](https://github.com/gazebosim/gz-physics/pull/606)
   - [Enforce joint velocity and effort limits for velocity control commands](https://github.com/gazebosim/gz-physics/pull/658)
-
 
 ## gazebosim/gz-common:
 
@@ -43,11 +50,9 @@
 - [Support mesh optimization when using AttachMeshShapeFeature](https://github.com/gazebosim/gz-sim/pull/2417)
 - [Add a flexible mechanism to combine user and default plugins](https://github.com/gazebosim/gz-sim/pull/2497)
 
-
 ## gazebosim/sdformat:
 
 - [Add mesh optimization attribute to `<mesh>`](https://github.com/gazebosim/sdformat/pull/1382), [sdformat#1403](https://github.com/gazebosim/sdformat/pull/1403)
-
 
 ## gazebosim/gz-cmake:
 
