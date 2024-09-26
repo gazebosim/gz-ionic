@@ -35,6 +35,15 @@
   - [Enable auto deactivation](https://github.com/gazebosim/gz-physics/pull/630)
   - [Add support for mesh convex decomposition](https://github.com/gazebosim/gz-physics/pull/606)
   - [Enforce joint velocity and effort limits for velocity control commands](https://github.com/gazebosim/gz-physics/pull/658)
+  - [Publish JointFeedback forces.](https://github.com/gazebosim/gz-physics/pull/628)
+  - [Support empty links](https://github.com/gazebosim/gz-physics/pull/665)
+- [Support setting max contacts in dartsim's ODE collision detector](https://github.com/gazebosim/gz-physics/pull/582)
+- [Support setting solver iterations](https://github.com/gazebosim/gz-physics/pull/609)
+- [Add package.xml](https://github.com/gazebosim/gz-physics/pull/608)
+- [Enforce fixed constraints recursively when setting pose on freegroups](https://github.com/gazebosim/gz-physics/pull/646)
+- [Ray intersection simulation feature](https://github.com/gazebosim/gz-physics/pull/641)
+- [Add Cone as a primitive parametric shape.](https://github.com/gazebosim/gz-physics/pull/638)
+- [Add no gravity link support](https://github.com/gazebosim/gz-physics/pull/633)
 
 ## gazebosim/gz-common:
 
