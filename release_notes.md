@@ -46,6 +46,11 @@
 - [Replace GTS with CDT](https://github.com/gazebosim/gz-common/pull/617)
 - [Reimplement console logging using `spdlog`](https://github.com/gazebosim/gz-common/pull/615)
 
+## gazebosim/gz-fuel-tools:
+
+- [CLI for creating config.yaml](https://github.com/gazebosim/gz-fuel-tools/pull/413)
+- [Add package.xml](https://github.com/gazebosim/gz-fuel-tools/pull/408)
+
 ## gazebosim/gz-gui:
 
 - [Add a flexible mechanism to combine user and default plugins](https://github.com/gazebosim/gz-gui/pull/631)
