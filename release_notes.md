@@ -38,7 +38,13 @@
 
 ## gazebosim/gz-common:
 
+- [Extend AssimpLoader to parse material transmission factor](https://github.com/gazebosim/gz-common/pull/577)
 - [Adds new function in MeshManager for performing convex decomposition](https://github.com/gazebosim/gz-common/pull/585)
+- [Add package.xml](https://github.com/gazebosim/gz-common/pull/587)
+- [DEM: Add support for GDAL vsicurl, vsizip support and avoid segfaults with huge VRT datasets](https://github.com/gazebosim/gz-common/pull/597)
+- [Use self-pipe trick to implement signal handlers](https://github.com/gazebosim/gz-common/pull/618)
+- [Replace GTS with CDT](https://github.com/gazebosim/gz-common/pull/617)
+- [Reimplement console logging using `spdlog`](https://github.com/gazebosim/gz-common/pull/615)
 
 ## gazebosim/gz-gui:
 
