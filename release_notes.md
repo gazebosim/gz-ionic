@@ -198,6 +198,10 @@
 - [Allow programmatic configuration of unicast relays.](https://github.com/gazebosim/gz-transport/pull/498)
 - [Add frequency to topic CLI.](https://github.com/gazebosim/gz-transport/pull/503)
 
+## gazebosim/gz-usd:
+
+- [Support Gazebo Harmonic and Ionic](https://github.com/gazebosim/gz-usd/pull/24)
+
 ## gazebosim/gz-cmake:
 
 - [Use visibility hidden by default](https://github.com/gazebosim/gz-cmake/pull/392)
