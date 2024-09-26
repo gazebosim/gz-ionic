@@ -97,6 +97,10 @@
 - [CameraTrack message for advanced tracking and following.](https://github.com/gazebosim/gz-msgs/pull/440)
 - [Add Cone as a primitive parametric shape.](https://github.com/gazebosim/gz-msgs/pull/441)
 
+## gazebosim/gz-plugin:
+
+- [Add package.xml](https://github.com/gazebosim/gz-plugin/pull/139)
+
 ## gazebosim/gz-sim:
 
 - [Support visualizing mesh collisions with convex decomposition](https://github.com/gazebosim/gz-sim/pull/2352)
