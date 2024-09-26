@@ -121,6 +121,17 @@
 - [Install Roboto fonts to ogre plugin](https://github.com/gazebosim/gz-rendering/pull/1035)
 - [Expose shadow texture size for directional lighting in SDF](https://github.com/gazebosim/gz-rendering/pull/1034)
 
+## gazebosim/gz-sensors:
+
+- [Set lens intrinsics in Depth and Rgbd camera sensors](https://github.com/gazebosim/gz-sensors/pull/390)
+- Performance Improvements:
+  - [DepthCamera and RGBDCamera - optimize RGB point cloud connection](https://github.com/gazebosim/gz-sensors/pull/413)
+  - [Publish lidar scan only if there are lidar scan connections](https://github.com/gazebosim/gz-sensors/pull/447)
+- [Add package.xml](https://github.com/gazebosim/gz-sensors/pull/422)
+- [Add API to check if sensor is in trigger mode](https://github.com/gazebosim/gz-sensors/pull/441)
+- [ForceTorqueSensor: add API for newest measurement](https://github.com/gazebosim/gz-sensors/pull/449)
+- [Use `//sensor/frame_id` SDFormat element](https://github.com/gazebosim/gz-sensors/pull/444)
+
 ## gazebosim/gz-sim:
 
 - [Support visualizing mesh collisions with convex decomposition](https://github.com/gazebosim/gz-sim/pull/2352)
