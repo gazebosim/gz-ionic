@@ -64,10 +64,13 @@
     lead to unexpected simulation behavior, causing confusion,
     particularly for new Gazebo users.
 
-    Gazebo Ionic addresses this issue by loading default plugins even when
-    users specify additional plugins. Gazebo Ionic also introduces
-    `<gz:policy>` settings to revert this behavior to how it functioned in
-    previous Gazebo versions, if desired.  For example, the
+    Gazebo Ionic addresses this issue by loading default plugins even when users
+    specify additional plugins. Gazebo Ionic also introduces the `<gz:policies>`
+    tag which can be used to revert this behavior to how it functioned in
+    previous Gazebo versions, if desired (see the
+    [GUI Configuration](https://gazebosim.org/api/sim/9/gui_config.html) and
+    [Server Configuration](https://gazebosim.org/api/sim/9/server_config.html)
+    tutorials to learn more about `<gz:policies>`). For example, the
     `contact_sensor.sdf` example can now include just the additional Contact
     system:
 
