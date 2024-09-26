@@ -240,12 +240,23 @@ See [gz-transport#477](https://github.com/gazebosim/gz-transport/pull/477), [gz-
 - [Spacecraft Thruster](https://github.com/gazebosim/gz-sim/pull/2431)
   - New spacecraft thruster system for simulating satellites was added.
 
+- [`package.xml` files have been added to all Gazebo packages](https://github.com/gazebosim/gz-sim/pull/2337)
+  - This adds structure package metadata so that automated tools can
+    easily extract information such as the package's version and its
+    dependencies. For example,
+    [`vcstool`](https://github.com/dirk-thomas/vcstool) can now be used to
+    fetch dependencies of Gazebo packages when building Gazebo from
+    source. In addition,
+    [`colcon`](https://colcon.readthedocs.io/en/released/) can now rely on
+    package dependencies in `package.xml` to determine the order of
+    packages to build.
+
 ## Bug Fixes
 
 ## Breaking Changes
 
 - [Added mass coefficients for hydrodynamics are now deprecated](https://github.com/gazebosim/gz-sim/pull/2493)
-Use the sdformat level `fluid_added_mass` tag instead. Tutorial and migration guide is available here: https://github.com/gazebosim/gz-sim/pull/2608
+Use the SDFormat level `fluid_added_mass` tag instead. Tutorial and migration guide is available here: https://github.com/gazebosim/gz-sim/pull/2608
 
 - [Spherical Coordinate API Cleaned Up](https://github.com/gazebosim/gz-math/pull/616)
 We are deprecating `LOCAL`. SphericalCoordinate LOCAL now behaves the same as `LOCAL2`. Also introduce new Coordinate3 APIs.
