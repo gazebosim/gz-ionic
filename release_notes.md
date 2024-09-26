@@ -182,10 +182,6 @@
 - [Support building with gz-cmake3 or gz-cmake4](https://github.com/gazebosim/gz-tools/pull/128)
 - [Add package.xml](https://github.com/gazebosim/gz-tools/pull/136)
 
-## gazebosim/sdformat:
-
-- [Add mesh optimization attribute to `<mesh>`](https://github.com/gazebosim/sdformat/pull/1382), [sdformat#1403](https://github.com/gazebosim/sdformat/pull/1403)
-
 ## gazebosim/gz-transport:
 
 - [Adds the python bindings tutorial](https://github.com/gazebosim/gz-transport/pull/450)
@@ -234,6 +230,31 @@
 ## gazebosim/ros_gz_project_template:
 
 - [Support for Harmonic](https://github.com/gazebosim/ros_gz_project_template/pull/35)
+
+## gazebosim/sdformat:
+
+- [URDF parser: use SDFormat 1.11, parse joint mimic](https://github.com/gazebosim/sdformat/pull/1333)
+- [Use `//link/inertial/density` for auto-inertials](https://github.com/gazebosim/sdformat/pull/1335)
+- [Parse kinematic property in link](https://github.com/gazebosim/sdformat/pull/1390)
+- [Add mesh optimization attribute to `<mesh>`](https://github.com/gazebosim/sdformat/pull/1382), [sdformat#1403](https://github.com/gazebosim/sdformat/pull/1403)
+- [Resolve URIs relative to file path](https://github.com/gazebosim/sdformat/pull/1373)
+- [Add bullet and torsional friction DOM](https://github.com/gazebosim/sdformat/pull/1351)
+- [Add kinematic methods to Python Link wrapper](https://github.com/gazebosim/sdformat/pull/1399)
+- [Add Python wrapper to ConvexDecomposition](https://github.com/gazebosim/sdformat/pull/1398)
+- [Add package.xml](https://github.com/gazebosim/sdformat/pull/1374)
+- [Add python bindings for bullet and torsional friction](https://github.com/gazebosim/sdformat/pull/1427)
+- [Added Automatic Moment of Inertia Calculations for Basic Shapes Pythoon wrappers](https://github.com/gazebosim/sdformat/pull/1424)
+- [Print auto inertial values with `gz sdf --print --expand-auto-inertials`](https://github.com/gazebosim/sdformat/pull/1422)
+- [Add python binding for no gravity link](https://github.com/gazebosim/sdformat/pull/1419)
+- [Add support for no gravity link](https://github.com/gazebosim/sdformat/pull/1410)
+- [Allow empty strings in plugin and custom attributes](https://github.com/gazebosim/sdformat/pull/1407)
+- [Add SetHeightMap and Heighmap to Geometry Python binding](https://github.com/gazebosim/sdformat/pull/1440)
+- [Add `World::ActorByName`](https://github.com/gazebosim/sdformat/pull/1436)
+- [Add Cone as a primitive parametric shape.](https://github.com/gazebosim/sdformat/pull/1415)
+- [Add `//sensor/frame_id` to SDF spec 1.12](https://github.com/gazebosim/sdformat/pull/1454)
+- [Spec 1.12: link_state, joint_state changes](https://github.com/gazebosim/sdformat/pull/1461)
+- [Add `_state` suffix to `//state` subelements](https://github.com/gazebosim/sdformat/pull/1455)
+- [Add optional binary relocatability](https://github.com/gazebosim/sdformat/pull/1414)
 
 ## gazebosim/gz-cmake:
 
