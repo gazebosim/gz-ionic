@@ -231,6 +231,10 @@
 - [Wait for create service to be available.](https://github.com/gazebosim/ros_gz/pull/588)
 - [Add deadline and liveliness QoSPolicyKinds to qos_overriding_options](https://github.com/gazebosim/ros_gz/pull/609)
 
+## gazebosim/ros_gz_project_template:
+
+- [Support for Harmonic](https://github.com/gazebosim/ros_gz_project_template/pull/35)
+
 ## gazebosim/gz-cmake:
 
 - [Use visibility hidden by default](https://github.com/gazebosim/gz-cmake/pull/392)
