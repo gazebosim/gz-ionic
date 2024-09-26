@@ -186,6 +186,18 @@
 
 - [Add mesh optimization attribute to `<mesh>`](https://github.com/gazebosim/sdformat/pull/1382), [sdformat#1403](https://github.com/gazebosim/sdformat/pull/1403)
 
+## gazebosim/gz-transport:
+
+- [Adds the python bindings tutorial](https://github.com/gazebosim/gz-transport/pull/450)
+- [Support for bazel on garden](https://github.com/gazebosim/gz-transport/pull/399)
+- [No input service request from the command line](https://github.com/gazebosim/gz-transport/pull/487)
+- [Use a default timeout when requesting a service from CLI.](https://github.com/gazebosim/gz-transport/pull/486)
+- [Oneway service request from the command line](https://github.com/gazebosim/gz-transport/pull/477)
+- [Add package.xml](https://github.com/gazebosim/gz-transport/pull/485)
+- [Add option to ignore local messages](https://github.com/gazebosim/gz-transport/pull/506)
+- [Allow programmatic configuration of unicast relays.](https://github.com/gazebosim/gz-transport/pull/498)
+- [Add frequency to topic CLI.](https://github.com/gazebosim/gz-transport/pull/503)
+
 ## gazebosim/gz-cmake:
 
 - [Use visibility hidden by default](https://github.com/gazebosim/gz-cmake/pull/392)
