@@ -10,40 +10,12 @@
 - [Build documentation using Sphinx](https://github.com/gazebosim/docs/pull/441)
 - [Add instructions to run ros_buildfarm jobs](https://github.com/gazebosim/docs/pull/477)
 
-## gazebosim/gz-utils:
+## gazebosim/gz-cmake:
 
-- [Add Logging utility class based on `spdlog`](https://github.com/gazebosim/gz-utils/pull/134).
-  Also see [gz-utils#145](https://github.com/gazebosim/gz-utils/pull/145),
-  [gz-utils#144](https://github.com/gazebosim/gz-utils/pull/144),
-  [gz-utils#142](https://github.com/gazebosim/gz-utils/pull/142),
-  [gz-utils#141](https://github.com/gazebosim/gz-utils/pull/141),
-  [gz-utils#139](https://github.com/gazebosim/gz-utils/pull/139)
-- [Add new functions for manipulating the environment](https://github.com/gazebosim/gz-utils/pull/114)
-- [Make the single argument constructor of `Subprocess` inherit the env](https://github.com/gazebosim/gz-utils/pull/113)
-- [bazel: Build and test subprocess functionality](https://github.com/gazebosim/gz-utils/pull/123)
-- [bazel: Add license checking support](https://github.com/gazebosim/gz-utils/pull/108)
-- [Add package.xml](https://github.com/gazebosim/gz-utils/pull/125)
-- [Require cmake version 3.22.1](https://github.com/gazebosim/gz-utils/pull/132)
-
-## gazebosim/gz-physics:
-
-- Improve bullet-featherstone physics plugin:
-  - [Add support for nested model](https://github.com/gazebosim/gz-physics/pull/574)
-  - [Add support for off-diagnoal inertial](https://github.com/gazebosim/gz-physics/pull/574)
-  - [Optimize static object collisions](https://github.com/gazebosim/gz-physics/pull/611)
-  - [Improve mesh collision stability](https://github.com/gazebosim/gz-physics/pull/600)
-  - [Enable auto deactivation](https://github.com/gazebosim/gz-physics/pull/630)
-  - [Add support for mesh convex decomposition](https://github.com/gazebosim/gz-physics/pull/606)
-  - [Enforce joint velocity and effort limits for velocity control commands](https://github.com/gazebosim/gz-physics/pull/658)
-  - [Publish JointFeedback forces.](https://github.com/gazebosim/gz-physics/pull/628)
-  - [Support empty links](https://github.com/gazebosim/gz-physics/pull/665)
-- [Support setting max contacts in dartsim's ODE collision detector](https://github.com/gazebosim/gz-physics/pull/582)
-- [Support setting solver iterations](https://github.com/gazebosim/gz-physics/pull/609)
-- [Add package.xml](https://github.com/gazebosim/gz-physics/pull/608)
-- [Enforce fixed constraints recursively when setting pose on freegroups](https://github.com/gazebosim/gz-physics/pull/646)
-- [Ray intersection simulation feature](https://github.com/gazebosim/gz-physics/pull/641)
-- [Add Cone as a primitive parametric shape.](https://github.com/gazebosim/gz-physics/pull/638)
-- [Add no gravity link support](https://github.com/gazebosim/gz-physics/pull/633)
+- [Use visibility hidden by default](https://github.com/gazebosim/gz-cmake/pull/392)
+- [Require cmake version 3.22.1](https://github.com/gazebosim/gz-cmake/pull/396)
+- [Deprecate BUILD_DOCS: generate always the doc target but exclude from default make](https://github.com/gazebosim/gz-cmake/pull/434)
+- [Deprecate GzPython.cmake in favor of find_package(Python3)](https://github.com/gazebosim/gz-cmake/pull/431)
 
 ## gazebosim/gz-common:
 
@@ -96,6 +68,26 @@
 - [Add package.xml](https://github.com/gazebosim/gz-msgs/pull/432)
 - [CameraTrack message for advanced tracking and following.](https://github.com/gazebosim/gz-msgs/pull/440)
 - [Add Cone as a primitive parametric shape.](https://github.com/gazebosim/gz-msgs/pull/441)
+
+## gazebosim/gz-physics:
+
+- Improve bullet-featherstone physics plugin:
+  - [Add support for nested model](https://github.com/gazebosim/gz-physics/pull/574)
+  - [Add support for off-diagnoal inertial](https://github.com/gazebosim/gz-physics/pull/574)
+  - [Optimize static object collisions](https://github.com/gazebosim/gz-physics/pull/611)
+  - [Improve mesh collision stability](https://github.com/gazebosim/gz-physics/pull/600)
+  - [Enable auto deactivation](https://github.com/gazebosim/gz-physics/pull/630)
+  - [Add support for mesh convex decomposition](https://github.com/gazebosim/gz-physics/pull/606)
+  - [Enforce joint velocity and effort limits for velocity control commands](https://github.com/gazebosim/gz-physics/pull/658)
+  - [Publish JointFeedback forces.](https://github.com/gazebosim/gz-physics/pull/628)
+  - [Support empty links](https://github.com/gazebosim/gz-physics/pull/665)
+- [Support setting max contacts in dartsim's ODE collision detector](https://github.com/gazebosim/gz-physics/pull/582)
+- [Support setting solver iterations](https://github.com/gazebosim/gz-physics/pull/609)
+- [Add package.xml](https://github.com/gazebosim/gz-physics/pull/608)
+- [Enforce fixed constraints recursively when setting pose on freegroups](https://github.com/gazebosim/gz-physics/pull/646)
+- [Ray intersection simulation feature](https://github.com/gazebosim/gz-physics/pull/641)
+- [Add Cone as a primitive parametric shape.](https://github.com/gazebosim/gz-physics/pull/638)
+- [Add no gravity link support](https://github.com/gazebosim/gz-physics/pull/633)
 
 ## gazebosim/gz-plugin:
 
@@ -198,6 +190,21 @@
 
 - [Support Gazebo Harmonic and Ionic](https://github.com/gazebosim/gz-usd/pull/24)
 
+## gazebosim/gz-utils:
+
+- [Add Logging utility class based on `spdlog`](https://github.com/gazebosim/gz-utils/pull/134).
+  Also see [gz-utils#145](https://github.com/gazebosim/gz-utils/pull/145),
+  [gz-utils#144](https://github.com/gazebosim/gz-utils/pull/144),
+  [gz-utils#142](https://github.com/gazebosim/gz-utils/pull/142),
+  [gz-utils#141](https://github.com/gazebosim/gz-utils/pull/141),
+  [gz-utils#139](https://github.com/gazebosim/gz-utils/pull/139)
+- [Add new functions for manipulating the environment](https://github.com/gazebosim/gz-utils/pull/114)
+- [Make the single argument constructor of `Subprocess` inherit the env](https://github.com/gazebosim/gz-utils/pull/113)
+- [bazel: Build and test subprocess functionality](https://github.com/gazebosim/gz-utils/pull/123)
+- [bazel: Add license checking support](https://github.com/gazebosim/gz-utils/pull/108)
+- [Add package.xml](https://github.com/gazebosim/gz-utils/pull/125)
+- [Require cmake version 3.22.1](https://github.com/gazebosim/gz-utils/pull/132)
+
 ## gazebosim/ros_gz:
 
 - [Add support for Harmonic/Humble pairing](https://github.com/gazebosim/ros_gz/pull/462)
@@ -255,10 +262,3 @@
 - [Spec 1.12: link_state, joint_state changes](https://github.com/gazebosim/sdformat/pull/1461)
 - [Add `_state` suffix to `//state` subelements](https://github.com/gazebosim/sdformat/pull/1455)
 - [Add optional binary relocatability](https://github.com/gazebosim/sdformat/pull/1414)
-
-## gazebosim/gz-cmake:
-
-- [Use visibility hidden by default](https://github.com/gazebosim/gz-cmake/pull/392)
-- [Require cmake version 3.22.1](https://github.com/gazebosim/gz-cmake/pull/396)
-- [Deprecate BUILD_DOCS: generate always the doc target but exclude from default make](https://github.com/gazebosim/gz-cmake/pull/434)
-- [Deprecate GzPython.cmake in favor of find_package(Python3)](https://github.com/gazebosim/gz-cmake/pull/431)
