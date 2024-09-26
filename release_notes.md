@@ -54,6 +54,13 @@
 ## gazebosim/gz-gui:
 
 - [Add a flexible mechanism to combine user and default plugins](https://github.com/gazebosim/gz-gui/pull/631)
+- [Added motion duration to the 'move to pose' service of the camera tracking plugin.](https://github.com/gazebosim/gz-gui/pull/594)
+- [Add package.xml](https://github.com/gazebosim/gz-gui/pull/613)
+- [Enhanced tracking camera and user visualization experience](https://github.com/gazebosim/gz-gui/pull/619)
+- [Add Cone as a primitive parametric shape.](https://github.com/gazebosim/gz-gui/pull/620)
+- [Added dark mode for drawer and menu buttons](https://github.com/gazebosim/gz-gui/pull/626)
+- [Expose shadow texture size for directional lighting in SDF](https://github.com/gazebosim/gz-gui/pull/633)
+- [Add a flexible mechanism to combine user and default plugins](https://github.com/gazebosim/gz-gui/pull/631)
 
 ## gazebosim/gz-sim:
 
