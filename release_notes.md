@@ -20,8 +20,8 @@
   [gz-utils#139](https://github.com/gazebosim/gz-utils/pull/139)
 - [Add new functions for manipulating the environment](https://github.com/gazebosim/gz-utils/pull/114)
 - [Make the single argument constructor of `Subprocess` inherit the env](https://github.com/gazebosim/gz-utils/pull/113)
-- [bazel: build and test subprocess functionality](https://github.com/gazebosim/gz-utils/pull/123)
-- [bazel:Add license checking support](https://github.com/gazebosim/gz-utils/pull/108)
+- [bazel: Build and test subprocess functionality](https://github.com/gazebosim/gz-utils/pull/123)
+- [bazel: Add license checking support](https://github.com/gazebosim/gz-utils/pull/108)
 - [Add package.xml](https://github.com/gazebosim/gz-utils/pull/125)
 - [Require cmake version 3.22.1](https://github.com/gazebosim/gz-utils/pull/132)
 
@@ -201,6 +201,35 @@
 ## gazebosim/gz-usd:
 
 - [Support Gazebo Harmonic and Ionic](https://github.com/gazebosim/gz-usd/pull/24)
+
+## gazebosim/ros_gz:
+
+- [Add support for Harmonic/Humble pairing](https://github.com/gazebosim/ros_gz/pull/462)
+- [Add messages for 2D Bounding Boxes to ros_gz_bridge](https://github.com/gazebosim/ros_gz/pull/458)
+- [Filter ROS arguments before gflags parsing](https://github.com/gazebosim/ros_gz/pull/453)
+- [Added support for using ROS 2 parameters to spawn entities in Gazebo using ros_gz_sim::create](https://github.com/gazebosim/ros_gz/pull/475)
+- [Add conversion for geometry_msgs/msg/TwistStamped <-> gz.msgs.Twist](https://github.com/gazebosim/ros_gz/pull/468)
+- [Add option to change material color from ROS.](https://github.com/gazebosim/ros_gz/pull/486)
+- [Correctly export ros_gz_bridge for downstream targets](https://github.com/gazebosim/ros_gz/pull/503)
+- [Add conversion for Detection3D and Detection3DArray](https://github.com/gazebosim/ros_gz/pull/523)
+- [Use resource_retriever in the bridge](https://github.com/gazebosim/ros_gz/pull/515)
+- [Add ROS namespaces to GZ topics](https://github.com/gazebosim/ros_gz/pull/512)
+- [Support `<gazebo_ros>` in `package.xml` exports](https://github.com/gazebosim/ros_gz/pull/492)
+- [Launch file for running gzserver](https://github.com/gazebosim/ros_gz/pull/532)
+- [Use gz_vendor packages](https://github.com/gazebosim/ros_gz/pull/531)
+- [Launch file for running gz_bridge](https://github.com/gazebosim/ros_gz/pull/530)
+- [Launch gz_spawn_model from xml](https://github.com/gazebosim/ros_gz/pull/551)
+- [Launch ros_gz_bridge from xml](https://github.com/gazebosim/ros_gz/pull/550)
+- [Launch gzserver from xml](https://github.com/gazebosim/ros_gz/pull/548)
+- [Launch file for combined spawn_model + bridge](https://github.com/gazebosim/ros_gz/pull/534)
+- [Launch file for combined gzserver + bridge](https://github.com/gazebosim/ros_gz/pull/533)
+- [Launch gzserver and the bridge as composable nodes](https://github.com/gazebosim/ros_gz/pull/528)
+- [Add a ROS node that runs Gazebo](https://github.com/gazebosim/ros_gz/pull/500)
+- [Add support for gz.msgs.EntityWrench](https://github.com/gazebosim/ros_gz/pull/573)
+- [Use `ignoreLocalMessages` in the bridge](https://github.com/gazebosim/ros_gz/pull/559)
+- [Add `override_timestamps_with_wall_time` parameter](https://github.com/gazebosim/ros_gz/pull/562)
+- [Wait for create service to be available.](https://github.com/gazebosim/ros_gz/pull/588)
+- [Add deadline and liveliness QoSPolicyKinds to qos_overriding_options](https://github.com/gazebosim/ros_gz/pull/609)
 
 ## gazebosim/gz-cmake:
 
