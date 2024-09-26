@@ -56,12 +56,17 @@
 - [Add a flexible mechanism to combine user and default plugins](https://github.com/gazebosim/gz-gui/pull/631)
 - [Added motion duration to the 'move to pose' service of the camera tracking plugin.](https://github.com/gazebosim/gz-gui/pull/594)
 - [Add package.xml](https://github.com/gazebosim/gz-gui/pull/613)
+- [Add optional binary relocatability](https://github.com/gazebosim/gz-gui/pull/580)
 - [Enhanced tracking camera and user visualization experience](https://github.com/gazebosim/gz-gui/pull/619)
 - [Add Cone as a primitive parametric shape.](https://github.com/gazebosim/gz-gui/pull/620)
 - [Added dark mode for drawer and menu buttons](https://github.com/gazebosim/gz-gui/pull/626)
 - [Expose shadow texture size for directional lighting in SDF](https://github.com/gazebosim/gz-gui/pull/633)
 - [Add a flexible mechanism to combine user and default plugins](https://github.com/gazebosim/gz-gui/pull/631)
 
+## gazebosim/gz-launch:
+
+- [Add optional binary relocatability](https://github.com/gazebosim/gz-launch/pull/218)
+- [Add package.xml](https://github.com/gazebosim/gz-launch/pull/249)
 ## gazebosim/gz-sim:
 
 - [Support visualizing mesh collisions with convex decomposition](https://github.com/gazebosim/gz-sim/pull/2352)
