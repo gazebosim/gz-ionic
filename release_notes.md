@@ -177,6 +177,11 @@
 - [Detachable joint: support for nested models of the same name](https://github.com/gazebosim/gz-sim/pull/1097)
 - [Enabling Global Illumination (GI VCT) for sensors in SDF](https://github.com/gazebosim/gz-sim/pull/2550)
 
+## gazebosim/gz-tools:
+
+- [Support building with gz-cmake3 or gz-cmake4](https://github.com/gazebosim/gz-tools/pull/128)
+- [Add package.xml](https://github.com/gazebosim/gz-tools/pull/136)
+
 ## gazebosim/sdformat:
 
 - [Add mesh optimization attribute to `<mesh>`](https://github.com/gazebosim/sdformat/pull/1382), [sdformat#1403](https://github.com/gazebosim/sdformat/pull/1403)
