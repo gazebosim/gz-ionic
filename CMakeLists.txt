@@ -14,7 +14,7 @@ find_package(gz-cmake4 REQUIRED)
 #============================================================================
 # Configure the project
 #============================================================================
-gz_configure_project(VERSION_SUFFIX pre1)
+gz_configure_project(VERSION_SUFFIX)
 
 # all list of ionic packages
 
