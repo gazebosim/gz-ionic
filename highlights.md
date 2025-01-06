@@ -261,6 +261,11 @@ Use the SDFormat level `fluid_added_mass` tag instead. Tutorial and migration gu
 - [Spherical Coordinate API Cleaned Up](https://github.com/gazebosim/gz-math/pull/616)
 We are deprecating `LOCAL`. SphericalCoordinate LOCAL now behaves the same as `LOCAL2`. Also introduce new Coordinate3 APIs.
 
+- [Physics: remove `*VelocityCmd` at each time step](https://github.com/gazebosim/gz-sim/pull/2228)
+In the Physics system, all `*VelocityCmd` components are now deleted after each time step,
+whereas previously the component values were set to 0 after each time step.
+Persistent velocity commands should be reapplied at each time step.
+
 ## Documentation
 
 - [Improved Gazebo Documentation Website](https://github.com/gazebosim/docs/pull/441)
